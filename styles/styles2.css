@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -10,10 +9,31 @@ body {
 header {
     background-color: #992c2c;
     color: white;
-    padding: 20px 0;
+    padding: 20px auto;
     position: relative;
     text-align: center;
+
 }
+
+header::before {
+    content: "";
+    background-image: url('../Images/LogoMightyducks01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 130px; 
+    height: 130px; 
+    position: absolute ;
+    top: -01px;
+    left: 80px;
+    bottom: 30px;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+header:hover::before {
+    transform: scale(1.2); 
+}
+
 
 header h1 {
     margin: 0;
@@ -21,6 +41,15 @@ header h1 {
     animation: fadeIn 2s ease-in-out;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.h2Home{
+    text-align: center;
+    font-size: 60px;
+    font-family: cursive;
+    color: #3b3939;
+    margin: 0 50px;
+    padding: 0 50px;
 }
 
 nav {
@@ -84,9 +113,37 @@ main::before {
     z-index: 0; 
 }
 
+main.before2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/hockey3.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; 
+    z-index: 0; 
+}
+
+main.before3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/hockey2.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; 
+    z-index: 0;
+}
+
 main .Logo {
     display: block;
-    margin: 20px auto;
+    margin: 20px 200px;
     width: 180px;
     height: auto;
     animation: bounceIn 2s ease-in-out;
@@ -125,6 +182,102 @@ footer {
     animation: fadeIn 2s ease-in-out;
 }
 
+table, th, td {
+    border: solid black 2px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+    background-color: transparent 0.3s ease-in-out;
+    color: #333;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #992c2c;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #992c2c;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #992c2c;
+}
+
+.SectionGameInfo{
+    color: #992c2c;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section.rules h3 {
+    font-size: 2em;
+    color: #992c2c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section.rules ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+    text-align: center;
+}
+
+section.rules ol li {
+    margin-bottom: 10px;
+}
+
+section dl dt {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #992c2c;
+}
+
+section dl dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.alpha{
+    list-style: lower-alpha;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -144,7 +297,6 @@ footer {
     from { transform: scale(0.5); }
     to { transform: scale(1); }
 }
-
 
 @media (min-width: 768px) {
     main {
@@ -171,6 +323,95 @@ body.contact .Imagen3 {
     display: none;
 }
 
-body img{
+body img {
     display: none;
+}
+
+body.rules main {
+    padding: 20px;
+    text-align: left;
+}
+
+
+body.rules main h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    background-color: #992c2c;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box; 
+    display: block;
+}
+
+
+body.rules main p.intro {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #555;
+    display: block;
+}
+
+
+body.rules main section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body.rules main section p,
+body.rules main section dl,
+body.rules main section ol {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+
+body.rules main section dl dt {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #992c2c;
+    margin-top: 20px;
+}
+
+
+body.rules main section dl dd {
+    margin-left: 20px;
+}
+
+body.rules main section ol {
+    list-style-type: decimal;
+    margin-left: 40px;
+}
+
+body.rules main section ol li {
+    margin-bottom: 15px;
+}
+
+body.rules main section ol ol {
+    list-style-type: lower-alpha;
+    margin-left: 20px;
+}
+
+body.rules main section ol ol li {
+    margin-bottom: 10px;
+}
+
+.info{
+    text-align: left;
+    padding-right: 500px;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h6{
+    font-size: 20px;
 }
