@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles3.css">
+    <meta name="description" content="Hockey League">
+    <meta name="keywords" content="league, hockey, sport">
+    <meta name="author" content="Jonathan Mendez">
+    <link rel="icon" type ="image/png" href="../Images/LogoMightyducks01.png">
+    <script src="https://kit.fontawesome.com/91750c99ea.js" crossorigin="anonymous"></script>
+    <title>Registration</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="../index.html">Home</a></li>
+                <li class="nav__li"><a href="./about.html">About MDHL</a></li>
+                <li class="nav__li"><a href="./contact.html">Contact</a></li>
+                <li class="nav__li"><a href="./rules.html">Rules</a></li>
+                <li class="nav__li"><a href="./gameInfo.html">Game Info</a></li>
+                <li class="nav__li"><a href="#">Registration</a></li>
+            </ul>
+            <ul class="nav__responsive-ul">
+                <div class="nav__responsive-button-container">
+                    <div class="nav__responsive-button fas fa-bars"></i></div>
+                </div>
+                <div class="nav__li-container">
+                    <li class="nav__responsive-li"><a href="../index.html">Home</a></li>
+                    <li class="nav__responsive-li"><a href="./about.html">About MDHL</a></li>
+                    <li class="nav__responsive-li"><a href="./contact.html">Contact</a></li>
+                    <li class="nav__responsive-li"><a href="./rules.html">Rules</a></li>
+                    <li class="nav__responsive-li"><a href="./gameInfo.html">Game Info</a></li>
+                    <li class="nav__responsive-li"><a href="#">Registration</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainform">
+        <form action="../show_data.html">
+        <section>
+            <h2>Formulario de registro</h2>
+            <fieldset class="fieldsetform">
+                <legend>Personal Date</legend>
+                <label for="PlayerFirtsName">Player`s First Name</label>
+                <input type="text" name="PlayerFirtsName" id="PlayerFirtsName"/>
+
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" />
+
+                <label for="streetAddress">Street Address</label>
+                <input type="text" name="streetAddress" id="streetAddress" min="18" />
+
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" />
+
+                <label for="zipCode">Zip Code:</label>
+                <input type="number" name="zipCode" id="zipCode" />
+
+                <label for="Gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <label for="Grade">Grade:</label>
+                <input type="radio" id="Grade" name="Grade" value="Pre-School">
+                <label for="male">Pre-Schol</label>
+
+                <input type="radio" id="1st" name="Grade" value="1st">
+                <label for="female">1st</label>
+
+                <input type="radio" id="2st" name="Grade" value="2st">
+                <label for="female">2st</label>
+
+                <input type="radio" id="3st" name="Grade" value="3st">
+                <label for="female">3st</label>
+
+                <input type="radio" id="4st" name="Grade" value="4st">
+                <label for="female">4st</label>
+
+                <input type="radio" id="5st" name="Grade" value="5st">
+                <label for="female">5st</label>
+            </fieldset>
+        </section>
+        <section>
+                <h3>Which elementary school do you live near?</h3>
+            <fieldset class="fieldsetform">
+                <legend>Closest School:</legend>
+
+                <input type="checkbox" id="ajKatzenmaier" name="ajKatzenmaier" value="ajKatzenmaier">
+                <label for="ajKatzenmaier">Aj Katzenmaier</label>
+
+                <input type="checkbox" id="Greenbay" name="Greenbay" value="Greenbay">
+                <label for="Greenbay">Greenbay</label>
+
+                <input type="checkbox" id="HowardAYeager" name="HowardAYeager" value="HowardAYeager">
+                <label for="HowardAYeager">Howard A Yeager</label>
+
+                <input type="checkbox" id="marjoriePHart" name="marjoriePHart" value="marjoriePHart">
+                <label for="marjoriePHart">Marjorie P Hart</label>
+
+                <input type="checkbox" id="northElementary" name="northElementary" value="northElementary">
+                <label for="northElementary">North Elementary</label>
+
+                <input type="checkbox" id="southElementary" name="southElementary" value="southElementary">
+                <label for="southElementary">South Elementary</label>
+            </fieldset>
+        </section>
+        <section>
+            <h3>What position(s) do you normally play? (check all that apply)</h3>
+                <fieldset class="fieldsetform">
+                <label for="position"></label>
+
+                <label for="Forward">Forward</label>
+                <input type="checkbox" name="position" id="Forward" value="Forward">
+
+                <label for="defense">Defense</label>
+                <input type="checkbox" name="position" id="defense" value="Defense">
+
+                <label for="midfield">Midfield</label>
+                <input type="checkbox" name="position" id="midfield" value="Midfield">
+
+                <label for="goalkeeper">Goalkeeper</label>
+                <input type="checkbox" name="position" id="goalkeeper" value="Goalkeeper">
+                </fieldset>
+        </section>
+        <section>
+            <h3>Uniform Size:</h3>
+                <fieldset class="fieldsetform">
+                <label for="uniformSize"></label>
+                
+                <label for="youthSmal">Youth Smal</label>
+                <input type="radio" name="uniformSize" id="youthSmal" value="Youth Smal">
+
+                <label for="youthMedium">Youth Medium</label>
+                <input type="radio" name="uniformSize" id="youthMedium" value="Youth Medium">
+
+                <label for="youthLarge">Youth Large</label>
+                <input type="radio" name="uniformSize" id="youthLarge" value="Youth Large">
+
+                <label for="small">Small</label>
+                <input type="radio" name="uniformSize" id="small" value="Small">
+
+                <label for="medium">Medium</label>
+                <input type="radio" name="uniformSize" id="medium" value="Medium">
+
+                <label for="large">Large</label>
+                <input type="radio" name="uniformSize" id="large" value="Large">
+
+                <label for="extraLarge">Extra-Large</label>
+                <input type="radio" name="uniformSize" id="extraLarge" value="Extra-Large">
+            </fieldset>
+        </section>
+        <section>
+            <h3>Permission to Play</h3>
+            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the “League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and voIunteers,incIuding the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities,which transportation <br>
+            <p>By signing below, I herebyagree andauthorizethe above.In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.</p> 
+            <p>Parent/GuardianSignature:_______________________</p>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+            <button>Submit</button>
+        </section>
+        </form>
+    </main>
+    <footer>
+        <p> &copy; Copyright 2024. All Rights Reserved MinHub. </p>
+    </footer>
+</body>
+</html>

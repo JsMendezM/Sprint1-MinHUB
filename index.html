@@ -7,34 +7,52 @@
     <meta name="keywords" content="league, hockey, sport">
     <meta name="author" content="Jonathan Mendez">
     <title>Mighty Ducks Hockey League</title>
-    <link rel="stylesheet" href="./styles/styles2.css">
+    <link rel="stylesheet" href="./styles/styles3.css">
     <link rel="icon" type ="image/png" href="./Images/LogoMightyducks01.png">
+    <script src="https://kit.fontawesome.com/91750c99ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Mighty Ducks Hockey League</h1>
-            <nav>
-                <a href="#">Home</a>
-                <a href="./Pages/About.html">About MDHL</a>
-                <a href="./Pages/Contact.html">Contact</a>
-                <a href="./Pages/rules.html">Rules</a>
-                <a href="./Pages/gameInfo.html">Game Info</a>
+            <nav class="nav">
+                <ul class="nav__ul">
+                    <li class="nav__li"><a href="#">Home</a></li>
+                    <li class="nav__li"><a href="./Pages/About.html">About MDHL</a></li>
+                    <li class="nav__li"><a href="./Pages/Contact.html">Contact</a></li>
+                    <li class="nav__li"><a href="./Pages/rules.html">Rules</a></li>
+                    <li class="nav__li"><a href="./Pages/gameInfo.html">Game Info</a></li>
+                    <li class="nav__li"><a href="./pages/registrationForm.html">Registration</a></li>
+                </ul>
+                <ul class="nav__responsive-ul">
+                    <div class="nav__responsive-button-container">
+                        <div class="nav__responsive-button fas fa-bars"></i></div>
+                    </div>
+                    <div class="nav__li-container">
+                        <li class="nav__responsive-li"><a href="#">Home</a></li>
+                        <li class="nav__responsive-li"><a href="./Pages/About.html">About MDHL</a></li>
+                        <li class="nav__responsive-li"><a href="./Pages/Contact.html">Contact</a></li>
+                        <li class="nav__responsive-li"><a href="./Pages/rules.html">Rules</a></li>
+                        <li class="nav__responsive-li"><a href="./Pages/gameInfo.html">Game Info</a></li>
+                        <li class="nav__responsive-li"><a href="./pages/registrationForm.html">Registration</a></li>
+                    </div>
+                </ul>
             </nav>
-            <img class="Imagen1" src="./Images/hockey1.jpg" width="200" alt="">
+            <img class="ImagenIndex" src="./Images/hockey1.jpg" width="200" alt="">
     </header>
 
-    <main>
-        <h2 class="h2Home"> Upcoming Events</h2>
-        <div>
-            <img class="Logo" src="./Images/LogoMightyducks01.png" alt="">
-            <article>
+    <main class="main__Container">
+        <div class="HomeBox h2index">
+            <h2> Upcoming Events</h2>
+        </div>
+        <div class="HomeBox" >
+            <img src="./images/LogoMightyducks01.png" alt="">
+        </div>
+        <div class="HomeBox dateindex">
                 <h5>August 4</h5>
                 <p class="pHome">MDSL Fundraiser</p>
                 <h5>August 16</h5>
                 <p class="pHome">Season Kick-off: Meet the Teams</p>
                 <h5>September 1</h5>
-                <p class="pHome">First Game of the Season (Check Game Schedule for details)z</p>
-            </article>    
+                <p class="pHome">First Game of the Season (Check Game Schedule for details)z</p>  
         </div>
     </main>
     <footer>

@@ -1,0 +1,659 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    size: 'Arial', sans-serif;
+}
+
+.nav__responsive-ul{
+    display: none;
+}
+
+.nav{
+    background-color: #992c2c;
+    text-align: right;
+}
+
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+}
+
+.nav__li:hover > a{
+    color: #663b3b;
+}
+
+.nav__li:hover{
+    color: #663b3b;
+}
+
+.nav__li a{
+    color: #ffff;
+    text-decoration: none;
+}
+
+.nav__li i{
+    width: 30px;
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+/*INDEx*/
+
+.ImagenIndex{
+    display: none;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    height: 650px;
+    background-image: url('../Images/hockey1.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.main__Container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 40px;
+}
+
+.HomeBox{
+    width: 300px;
+    height: 300px;
+}
+
+.HomeBox img{
+    width: 100%;
+    height: auto;
+}
+
+.h2index{
+    align-content: center;
+    height: auto;
+    font-size: auto;
+}
+
+.dateindex{
+    text-align: left;
+    align-content: center;
+    height: auto;
+    font-size: 20px;
+}
+
+.pHome{
+    padding: 20px;
+}
+
+/*About us*/
+
+.Imagen2{
+    display: none;
+}
+
+.before2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.AboutBox{
+    width: 40%;
+    height: 30%;
+    align-content: center;
+}
+
+.AboutBox h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+/*Contact us*/
+
+.Imagen3{
+    display: none;
+}
+
+.main__containercontact{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 40px;
+    align-items: center;
+
+}
+
+.divcontact{
+    width: 50%;
+    height: 50%;
+    align-items: center;
+}
+
+.divcontact h2{
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.Logocontact{
+    width: 100%;
+    height: auto;
+}
+
+.main__containercontact::before{
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    height: 690px;
+    background-image: url('../Images/hockey1.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/*rules*/
+
+section.rules h3 {
+    font-size: 2em;
+    color: #992c2c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section.rules ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+    text-align: center;
+}
+
+section.rules ol li {
+    margin-bottom: 10px;
+}
+
+
+body.rules main {
+    padding: 20px;
+    text-align: left;
+}
+
+
+body.rules main h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    background-color: #992c2c;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box; 
+    display: block;
+}
+
+
+body.rules main p.intro {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #555;
+    display: block;
+}
+
+
+body.rules main section {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body.rules main section p,
+body.rules main section dl,
+body.rules main section ol {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+
+body.rules main section dl dt {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #992c2c;
+    margin-top: 20px;
+}
+
+
+body.rules main section dl dd {
+    margin-left: 20px;
+}
+
+body.rules main section ol {
+    list-style-type: decimal;
+    margin-left: 40px;
+}
+
+body.rules main section ol li {
+    margin-bottom: 15px;
+}
+
+body.rules main section ol ol {
+    list-style-type: lower-alpha;
+    margin-left: 20px;
+}
+
+body.rules main section ol ol li {
+    margin-bottom: 10px;
+}
+
+.before3{
+    display: flex;
+    justify-content: space-between;
+    height: 1300px;
+    box-sizing: border-box;
+}
+
+.before3::before {
+    content: "";
+    position: absolute;
+    top: 41px;
+    left: 0;
+    width: 100%;
+    height: 1300px;
+    background-image: url('../Images/hockey3.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+}
+
+/*gameinfo*/
+
+.maingameinfo-container{
+    align-items: center;
+}
+
+.h2game{
+    color: #992c2c;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 30px;
+    border: solid black 2px;
+}
+
+
+.maingameinfo::before{
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    height: 1800px;
+    background-image: url('../Images/hockey1.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.SectionGameInfo{
+    color: #992c2c;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.maingameinfo-container{
+    display: flex;
+    padding-bottom: 15px;
+}
+
+table, th, td {
+    border: solid black 2px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    position: relative;
+    background-color: transparent 0.3s ease-in-out;
+    color: #333;
+    box-sizing: border-box;
+    padding-right: 60px;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #992c2c;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #992c2c;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.maps-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+}
+
+.tarjetmain{
+    margin: auto;
+}
+
+.tarjetmain iframe{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+
+}
+
+/*registrationform________________________________________________________*/
+
+.mainform{
+    height: 550px;
+    padding: 3%;
+}
+
+.fieldsetform{
+ padding: 5px;
+}
+
+/*Foteer________________________________________________________*/
+footer {
+    background-color: #992c2c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@media only screen and (max-width: 530px){
+    .nav__ul{
+        display: none;
+    }
+
+    .nav__responsive-ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 39px;
+        padding-top: 27px;
+        height: 37px;
+    }
+
+    .nav__li-container{
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 64px);
+        background-color: #992c2c;
+        transition: all 1s;
+        z-index: 1;
+        width: 75%;
+        padding-top: 27px;
+        text-align: left;
+    }
+
+    .nav__responsive-button-container{
+        position: absolute;
+        width: 100%;
+        font-size: 25px;
+        background-color: #992c2c;
+        margin-top: -64px;
+        z-index: 100;
+    }
+
+    .nav__responsive-button{
+        padding: 6px 20px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .nav{
+        height: 37px;
+        width: 100%;
+        background-color: #663b3b;
+    }
+
+    .nav__responsive-li{
+        width: 100%;
+        padding: 9px 20px;
+    }
+
+    .nav__responsive-li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav__responsive-ul:hover > .nav__li-container{
+        top: -27px;
+
+    }
+    /*Home*/
+
+    main::before {
+        content: "";
+        position: absolute;
+        top: 42px;
+        left: 0;
+        width: 100%;
+        height: 800px;
+        background-image: url('../Images/hockey1.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    .main__Container{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 60px 40px;
+    }
+    
+    .HomeBox{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .HomeBox img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .h2index{
+        align-content: center;
+        height: auto;
+        font-size: auto;
+    }
+    
+    .dateindex{
+        text-align: left;
+        align-content: center;
+        height: auto;
+        font-size: 20px;
+    }
+    
+    .pHome{
+        padding: 20px;
+    }
+
+    /*About*/
+
+    .Imagen2{
+        display: none;
+    }
+    
+    .before2{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    .before2::before{
+        content: "";
+        position: absolute;
+        top: 42px;
+        left: 0;
+        width: 100%;
+        height: 800px;
+        background-image: url('../Images/hockey1.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    .AboutBox{
+        width: 500px;
+        height: auto;
+        align-content: center;
+        padding-bottom: 50px;
+    }
+    
+    .AboutBox h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    /*contact*/
+
+    
+.Imagen3{
+    display: none;
+}
+
+.main__containercontact{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.divcontact{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.divcontact h2{
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.Logocontact{
+    width: 100%;
+    height: auto;
+}
+    
+/*Rules*/
+
+.titlerules{
+    position: absolute;
+    width: 100%;
+    padding-right: 25px;
+}
+
+.subtitlerules{
+    padding-top: 200px;
+}
+
+body.rules main h1 {
+    font-size: 2em;
+    padding: 8px;
+}
+
+body.rules main p.intro {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+body.rules main section {
+    padding: 10px;
+}
+
+body.rules main section p,
+body.rules main section dl,
+body.rules main section ol {
+    font-size: 1em;
+}
+
+body.rules main section dl dt {
+    font-size: 1.2em;
+}
+
+.before3 {
+    height: auto; 
+}
+
+.before3::before {
+    top: 0;
+    height: 100%; 
+}
+
+/*gameinfo*/
+
+
+
+.maps-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetmain {
+    flex: 1 1 100%;
+}
+
+table, th, td {
+    font-size: 12px;
+}
+
+th, td {
+    padding: 6px;
+}
+
+.maingameinfo-container h1{
+    display: none;
+}
+
+}
